@@ -4,4 +4,5 @@ double b = double.Parse(Console.ReadLine());
 double c = double.Parse(Console.ReadLine());
 
 Console.WriteLine($"P = {a + b + c}");
-Console.WriteLine($"S = {Math.Sqrt(((a + b + c) / 2) * (((a + b + c) / 2) - a) * (((a + b + c) / 2) - b) * (((a + b + c) / 2) - c)):F2}");
+double p = (a + b + c) / 2;
+Console.WriteLine($"S = {Math.Sqrt(p * ((p / 2) - a) * ((p / 2) - b) * ((p - c)))}");
